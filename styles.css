@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: rgb(92, 148, 243);
+}
+.info{
+    display: flex;
+    gap: 2rem;
+}
+.email{
+    display: flex;
+    gap: 1rem;
+}
+
+.address{
+    display: flex;
+    gap: 1rem;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.info p, .address p{
+    color: white;
+}
+
+.shadow{
+    box-shadow: 2px 3px 4px 6px lightgray;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+
+}
+.menu{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.contact-num button{
+    background-color:rgb(92, 148, 243); 
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+.contact-num button:hover{
+    background-color: black;
+}
+.bi-list{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.tittle{
+    width: 50%;
+   display: flex;
+}
+.hero h2{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+button{
+    transition: all 0.7s;
+}
+.btn button{
+    background: rgb(92, 148, 243);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px 30px;
+    color: white;
+}
+.btn button:hover{
+    background-color: black;
+    
+}
+
+.curved{
+    background: rgb(92, 148, 243);
+    display: flex;
+    padding: 10rem;
+    flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   grid-area: 2rem ;
+}
+.curved h1{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.images{
+    display: flex;
+    gap: 5rem;
+    color: bl;
+}
+.sponcers{
+    display: flex;
+    margin: auto;
+    padding: 10rem;
+}
+.right{
+    display: flex;
+    gap: 10rem;
+}
+.limgs{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+.rimgs{
+    display: flex;
+    flex-direction: column;
+}
+.sponcers h1{
+    font-size: 3rem;
+    font-weight: light;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.sponcers p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: light;
+}
+
+
+/* .anim{ 
+    text-align: center;
+    background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2lld3d1dTZsbjZrZ2xhYml3Ym83ZWlnb3RsNTV4Z3N1M2ppMHR4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41lRutlaqxG5C836/giphy.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+
+@media only screen and (max-width:800px){
+header{
+    justify-content: space-between;
+}
+
+}
+
+@media only screen and (max-width:700px){
+    .info{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .bi-list{
+        display: block
+    }
+    .hero{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .tittle{
+        width: 100%;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 2rem;
+      
+    }
+    .t-image img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .curved{
+        align-items: ;
+    }
+    .images{
+        width: 100%;
+        justify-content: center;
+        padding: 8rem;
+        overflow-x: scroll;
+        gap: 2rem;
+    }
+   
+  
+
+nav ul, .contact-num {
+     display: none; 
+}
+nav ul{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(92, 148, 243);
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+}
